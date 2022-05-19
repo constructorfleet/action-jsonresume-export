@@ -7,6 +7,10 @@ on:
 env:
   CI: true
 
+defaults:
+  run:
+    working-directory: 'constructorfleet.action-jsonresume-export'
+
 jobs:
   tag:
     name: Tag Role
@@ -15,7 +19,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          path: "${{ github.repository }}"
+          path: 'constructorfleet.action-jsonresume-export'
+
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.36.0
         env:
