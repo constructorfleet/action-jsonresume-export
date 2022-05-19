@@ -1,5 +1,5 @@
 # action.yml
-name: 'JSONResume Export'
+name: 'JSONResume Export Plus'
 description: 'Simple GitHub Action to export your JSONResume'
 branding:
   icon: 'printer'
