@@ -8,11 +8,12 @@ This can be combined with other actions to publish your resume as a Github page.
 
 ## Inputs
 
-| Name | Description | Default |
-| --- | --- | --- |
-| theme | JSONResume theme name. See https://jsonresume.org/themes/ | `flat` |
-| resume_filepath | file path to your resume in JSONResume format | `resume.json` |
-| output_filepath | output file path | `index.html` |
+| Name            | Description                                               | Default |
+|-----------------|-----------------------------------------------------------| --- |
+| theme           | JSONResume theme name. See https://jsonresume.org/themes/ | `flat` |
+| resume_filepath | file path to your resume in JSONResume format             | `resume.json` |
+| output_filepath | output file path                                          | `index.html` |
+| output_format   | output file format                                        | `html` |
 
 ## Example Workflows
 
