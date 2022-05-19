@@ -20,9 +20,14 @@ inputs:
     default: 'resume.json'
   output_filepath:
     description: |
-      Output file path for exported HTML file.
+      Output file path for exported file.
     required: false
     default: 'index.html'
+  output_format:
+    description: |
+      Output file format for exported file.
+    required: false
+    default: 'html'
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -30,3 +35,4 @@ runs:
     - ${{ inputs.theme }}
     - ${{ inputs.resume_filepath }}
     - ${{ inputs.output_filepath }}
+    - ${{ inputs.output_format }}
