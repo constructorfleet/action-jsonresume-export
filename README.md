@@ -44,7 +44,7 @@ jobs:
     needs: check_run
     steps:
       - uses: actions/checkout@v2
-      - uses: kelvintaywl/action-jsonresume-export@v1
+      - uses: constructorfleet/action-jsonresume-export@v1.0
         name: Export resume as HTML
         with:
           theme: macchiato
