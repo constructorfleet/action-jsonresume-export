@@ -26,4 +26,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           WITH_V: true
+          SOURCE: ./constructorfleet.action-jsonresume-export
           DEFAULT_BUMP: minor
