@@ -10,11 +10,8 @@ then
     echo "$THEME is a directory"
     if [ -f "$THEME/package.json" ]
     then
-      BASE_DIR=$(dirname -- "$( readlink -f -- "$0"; )")
       echo "Installing theme dependencies"
-      cd "$THEME"
-      npm install
-      cd "$BASE_DIR"
+      (cd "$THEME" && npm install)
     fi
 elif [ -f "$THEME" ]
 then
