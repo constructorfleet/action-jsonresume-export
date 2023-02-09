@@ -8,7 +8,7 @@ LABEL repository="https://github.com/constructorfleet/jsonresume-github-page"
 LABEL homepage="https://github.com/constructorfleet/jsonresume-github-page"
 LABEL maintainer="Teagan Glenn <that@teagantotally.rocks>"
 
-RUN npm install -g resume-cli@3.0.3
+RUN npm install -g resume-cli@3.0.8
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
